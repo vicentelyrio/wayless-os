@@ -1,0 +1,20 @@
+// linear
+$space-100: $scale-025;
+$space-200: $scale-050;
+$space-300: $scale-100;
+$space-400: $scale-150;
+$space-500: $scale-200;
+$space-600: $scale-300;
+$space-700: $scale-400;
+$space-800: $scale-500;
+$space-900: $scale-600;
+$space-1000: $scale-700;
+
+// dynamic
+$space-xxs: $scale-025 * $density;
+$space-xs: $scale-050 * $density;
+$space-sm: $scale-075 * $density;
+$space-md: $scale-100 * $density;
+$space-lg: $scale-150 * $density;
+$space-xl: $scale-200 * $density;
+$space-xxl: $scale-300 * $density;
