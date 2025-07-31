@@ -1,5 +1,5 @@
 window.Bar {
-  color: var(--headerbar-bg);
+  color: var(--headerbar-fg);
   font-weight: bold;
 }
 
@@ -8,7 +8,5 @@ window.Bar > centerbox {
 }
 
 window.Bar button {
-  background: var(--headerbar-bg);
-  border-radius: 8px;
-  margin: 2px;
+  background: transparent;
 }

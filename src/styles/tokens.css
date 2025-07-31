@@ -56,8 +56,12 @@
   --breakpoint-desktop: 1920;
   --breakpoint-4k: 2800;
 
+  /* Defaults */
+  --base: 16px;
+  --density: 1;
+  --opacity: 1;
+
   /* Scale */
-  --base: 16;
   --scale-0: calc(var(--base) * 0);
   --scale-025: calc(var(--base) * 0.25);
   --scale-050: calc(var(--base) * 0.5);
@@ -75,11 +79,12 @@
   --scale-1000: calc(var(--base) * 10);
 
   /* Rotation */
-  --rotation-030: 30;
-  --rotation-045: 45; --rotation-090: 90;
-  --rotation-180: 180;
-  --rotation-270: 270;
-  --rotation-315: 315;
+  --rotation-030: 30deg;
+  --rotation-045: 45deg;
+  --rotation-090: 90deg;
+  --rotation-180: 180deg;
+  --rotation-270: 270deg;
+  --rotation-315: 315deg;
 
   /* Opacity */
   --opacity-010: 0.1;
@@ -134,29 +139,28 @@
   --space-1000: var(--scale-700);
 
   /* Spacing dynamic */
-  --space-xxs: calc(var(--scale-025 * var(--density)));
-  --space-xs: calc(var(--scale-050 * var(--density)));
-  --space-sm: calc(var(--scale-075 * var(--density)));
-  --space-md: calc(var(--scale-100 * var(--density)));
-  --space-lg: calc(var(--scale-150 * var(--density)));
-  --space-xl: calc(var(--scale-200 * var(--density)));
-  --space-xxl: calc(var(--scale-300 * var(--density)));
+  --space-xxs: calc(var(--scale-025) * var(--density));
+  --space-xs: calc(var(--scale-050) * var(--density));
+  --space-sm: calc(var(--scale-075) * var(--density));
+  --space-md: calc(var(--scale-100) * var(--density));
+  --space-lg: calc(var(--scale-150) * var(--density));
+  --space-xl: calc(var(--scale-200) * var(--density));
+  --space-xxl: calc(var(--scale-300) * var(--density));
 }
 
 /*
 * Density
 * ----------------------------------------------------------------------------
 * */
-:root[data-density="compact"] {
+:root.density-compact {
   --density: 0.5;
 }
 
-:root,
-:root[data-density="comfortable"] {
+:root.density-comfortable {
   --density: 1.0;
 }
 
-:root[data-density="spacious"] {
+:root.density-spacious {
   --density: 1.5;
 }
 
@@ -164,15 +168,14 @@
 * Opacity
 * ----------------------------------------------------------------------------
 * */
-:root[data-opacity="glass"] {
+:root.opacity-glass {
   --opacity: 0.5;
 }
 
-:root[data-opacity="fog"] {
+:root.opacity-fog {
   --opacity: 0.8;
 }
 
-:root,
-:root[data-opacity="none"] {
+:root.opacity-none {
   --opacity: 1;
 }
