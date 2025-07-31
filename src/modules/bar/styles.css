@@ -1,0 +1,14 @@
+window.Bar {
+  color: var(--headerbar-bg);
+  font-weight: bold;
+}
+
+window.Bar > centerbox {
+  background: var(--headerbar-bg);
+}
+
+window.Bar button {
+  background: var(--headerbar-bg);
+  border-radius: 8px;
+  margin: 2px;
+}

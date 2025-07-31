@@ -1,0 +1,178 @@
+:root {
+  /* Color Palette */
+  --window-bg: @window_bg_color;
+  --window-fg: @window_fg_color;
+  --view-bg: @view_bg_color;
+  --view-fg: @view_fg_color;
+  --headerbar-bg: @headerbar_bg_color;
+  --headerbar-fg: @headerbar_fg_color;
+  --headerbar-border: @headerbar_border_color;
+  --accent: @accent_color;
+  --accent-bg: @accent_bg_color;
+  --accent-fg: @accent_fg_color;
+  --success: @success_color;
+  --warning: @warning_color;
+  --error: @error_color;
+  --destructive: @destructive_color;
+  --card-bg: @card_bg_color;
+  --card-fg: @card_fg_color;
+  --sidebar-bg: @sidebar_bg_color;
+  --sidebar-fg: @sidebar_fg_color;
+  --red: #ff0000;
+  --green: #00ff00;
+  --blue: #0000ff;
+  --yellow: #ffff00;
+  --cyan: #00ffff;
+  --magenta: #ff00ff;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* @theme_fg_color; */
+  /* @theme_text_color; */
+  /* @theme_bg_color */
+  /* @theme_base_color */
+  /* @theme_selected_bg_color */
+  /* @theme_selected_fg_color */
+  /* @insensitive_bg_color */
+  /* @insensitive_fg_color */
+  /* @insensitive_base_color */
+  /* @theme_unfocused_fg_color */
+  /* @theme_unfocused_text_color */
+  /* @theme_unfocused_bg_color */
+  /* @theme_unfocused_base_color */
+  /* @theme_unfocused_selected_bg_color */
+  /* @theme_unfocused_selected_fg_color */
+  /* @unfocused_insensitive_color */
+  /* @borders */
+  /* @unfocused_borders */
+  /* @warning_color */
+  /* @error_color */
+  /* @success_color */
+  /* @destructive_color */
+
+  /* Breakpoints */
+  --breakpoint-mobile: 576;
+  --breakpoint-tablet: 992;
+  --breakpoint-desktop: 1920;
+  --breakpoint-4k: 2800;
+
+  /* Scale */
+  --base: 16;
+  --scale-0: calc(var(--base) * 0);
+  --scale-025: calc(var(--base) * 0.25);
+  --scale-050: calc(var(--base) * 0.5);
+  --scale-075: calc(var(--base) * 0.75);
+  --scale-100: calc(var(--base) * 1);
+  --scale-150: calc(var(--base) * 1.5);
+  --scale-200: calc(var(--base) * 2);
+  --scale-300: calc(var(--base) * 3);
+  --scale-400: calc(var(--base) * 4);
+  --scale-500: calc(var(--base) * 5);
+  --scale-600: calc(var(--base) * 6);
+  --scale-700: calc(var(--base) * 7);
+  --scale-800: calc(var(--base) * 8);
+  --scale-900: calc(var(--base) * 9);
+  --scale-1000: calc(var(--base) * 10);
+
+  /* Rotation */
+  --rotation-030: 30;
+  --rotation-045: 45; --rotation-090: 90;
+  --rotation-180: 180;
+  --rotation-270: 270;
+  --rotation-315: 315;
+
+  /* Opacity */
+  --opacity-010: 0.1;
+  --opacity-020: 0.2;
+  --opacity-030: 0.3;
+  --opacity-040: 0.4;
+  --opacity-050: 0.5;
+  --opacity-060: 0.6;
+  --opacity-070: 0.7;
+  --opacity-080: 0.8;
+  --opacity-090: 0.9;
+  --opacity-100: 1.0;
+
+  /* Radius */
+  --radius-xs: var(--scale-025);
+  --radius-sm: var(--scale-050);
+  --radius-md: var(--scale-075);
+  --radius-lg: var(--scale-100);
+  --radius-xl: var(--scale-150);
+
+  /* Size linear */
+  --size-100: var(--scale-025);
+  --size-200: var(--scale-050);
+  --size-300: var(--scale-075);
+  --size-400: var(--scale-100);
+  --size-500: var(--scale-150);
+  --size-600: var(--scale-200);
+  --size-700: var(--scale-300);
+  --size-800: var(--scale-400);
+  --size-900: var(--scale-500);
+  --size-1000: var(--scale-600);
+
+  /* Size dynamic */
+  --size-xxs: calc(var(--scale-050) * var(--density));
+  --size-xs: calc(var(--scale-100) * var(--density));
+  --size-sm: calc(var(--scale-150) * var(--density));
+  --size-md: calc(var(--scale-200) * var(--density));
+  --size-lg: calc(var(--scale-300) * var(--density));
+  --size-xl: calc(var(--scale-400) * var(--density));
+  --size-xxl: calc(var(--scale-500) * var(--density));
+
+  /* Spacing linear */
+  --space-100: var(--scale-025);
+  --space-200: var(--scale-050);
+  --space-300: var(--scale-100);
+  --space-400: var(--scale-150);
+  --space-500: var(--scale-200);
+  --space-600: var(--scale-300);
+  --space-700: var(--scale-400);
+  --space-800: var(--scale-500);
+  --space-900: var(--scale-600);
+  --space-1000: var(--scale-700);
+
+  /* Spacing dynamic */
+  --space-xxs: calc(var(--scale-025 * var(--density)));
+  --space-xs: calc(var(--scale-050 * var(--density)));
+  --space-sm: calc(var(--scale-075 * var(--density)));
+  --space-md: calc(var(--scale-100 * var(--density)));
+  --space-lg: calc(var(--scale-150 * var(--density)));
+  --space-xl: calc(var(--scale-200 * var(--density)));
+  --space-xxl: calc(var(--scale-300 * var(--density)));
+}
+
+/*
+* Density
+* ----------------------------------------------------------------------------
+* */
+:root[data-density="compact"] {
+  --density: 0.5;
+}
+
+:root,
+:root[data-density="comfortable"] {
+  --density: 1.0;
+}
+
+:root[data-density="spacious"] {
+  --density: 1.5;
+}
+
+/*
+* Opacity
+* ----------------------------------------------------------------------------
+* */
+:root[data-opacity="glass"] {
+  --opacity: 0.5;
+}
+
+:root[data-opacity="fog"] {
+  --opacity: 0.8;
+}
+
+:root,
+:root[data-opacity="none"] {
+  --opacity: 1;
+}
