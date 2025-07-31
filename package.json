@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "bar:dev": "./run/watch.sh WaylessOS-Bar $HOME/.config/wayless-os/src/modules/bar/index.tsx"
+    "bar:dev": "./run/watch.sh WaylessOS-Desktop $HOME/.config/wayless-os/src/index.ts"
   },
   "dependencies": {
     "ags": "*"
