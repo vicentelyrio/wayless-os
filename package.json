@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "bar:dev": "./run/watch.sh WaylessOS-Bar $HOME/.config/wayless-os/src/modules/bar/index.tsx"
+  },
   "dependencies": {
     "ags": "*"
   }
