@@ -3,6 +3,7 @@
     "bar:dev": "./run/watch.sh WaylessOS-Desktop $HOME/.config/wayless-os/src/index.ts"
   },
   "dependencies": {
-    "ags": "*"
+    "ags": "*",
+    "dayjs": "^1.11.13"
   }
 }
